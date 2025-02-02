@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Services - Tasty Bites</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ff6b6b;
+        }
+
+        /* Services Grid */
+        .services-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+
+        .service-card h3 {
+            margin: 1rem 0;
+            font-size: 1.25rem;
+        }
+
+        .service-card p {
+            color: #555;
+        }
+
+        /* Hero Section */
+        header {
+            background-color: #ffcc00;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-links a {
+                margin: 0.5rem 0;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+        }
+
+        .back-button{
+            button{
+                width: 100%;
+                text-align: center;
+                margin-top: 25px;
+                text-decoration: none;
+                background-color: rgb(255, 210, 156);
+                padding: 10px;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">Tasty Bites</a>
+            <div class="nav-links">
+                <a href="http://127.0.0.1:5500/images/menu.html">Order Now</a>
+                <a href="http://127.0.0.1:5500/about.html">About Us</a>
+                <a href="http://127.0.0.1:5500/contacts.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1>Welcome to Quality Time Restro</h1>
+        <p>Your one-stop solution for delicious food services!</p>
+    </header>
+    <main class="services-container" id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="catering.jpg" alt="Service 1">
+                <h3>Catering Services</h3>
+                <p>We provide top-notch catering for all your events.</p>
+            </div>
+            <div class="service-card">
+                <img src="meal delivery.jpg" alt="Service 2">
+                <h3>Meal Delivery</h3>
+                <p>Enjoy delicious meals delivered right to your door.</p>
+            </div>
+            <div class="service-card">
+                <img src="cooking classes.jpg" alt="Service 3">
+                <h3>Cooking Classes</h3>
+                <p>Learn to cook with our expert chefs in fun classes.</p>
+            </div>
+            <div class="service-card">
+                <img src="event planning.jpg" alt="Service 4">
+                <h3>Event Planning</h3>
+                <p>Let us help you plan your next big event with style.</p>
+            </div>
+        </div>
+        <a href="index.html" class="back-button">
+            <button>Back to Home</button>
+        </a>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Quality Time Restro. All rights reserved.</p>
+    </footer>
+</body>
+</html
